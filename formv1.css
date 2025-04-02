@@ -1,0 +1,152 @@
+/* Basic styling for the form container */
+.frm-cnt {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for form labels */
+.fld-lbl {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Styling for text inputs */
+.txt-inp {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Styling for the phone input wrapper */
+.phone-wrp {
+    position: relative;
+}
+
+/* Styling for invalid inputs */
+.invalid {
+    border-color: #e74c3c;
+}
+
+.invalid::placeholder {
+    color: #e74c3c;
+}
+
+/* Styling for the save button */
+.sv-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sv-btn.success {
+    background-color: #2ecc71;
+}
+
+/* Styling for the remove contact button */
+.rmv-cnt {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Styling for the day section */
+.day-sec {
+    margin-bottom: 20px;
+}
+
+.day-sec .cnt-hdr {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Styling for the time input wrapper */
+.time-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Styling for individual time inputs */
+.time-row .cnt-wrp {
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Styling for the add time button */
+.add-time-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Styling for the clear times button */
+.clear-times-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Styling for the tab buttons */
+.tab-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px 3px 0 0;
+}
+
+.tab-btn.active {
+    background-color: #2980b9;
+}
+
+/* Styling for the tab panels */
+.tab-panel {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 3px 3px 3px;
+    background-color: #fff;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+[aria-live="polite"] .sr-only {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    border: none;
+}
